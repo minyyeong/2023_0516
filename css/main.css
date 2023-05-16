@@ -1,0 +1,85 @@
+@charset "utf-8";  
+  * {margin:0; padding:0; box-sizing:border-box;}
+  ul, ol, li {list-style:none; margin:0; padding:0;}
+
+  /*slide*/
+  #slidewrap {width:100%; height:634px; margin:0 auto; position:relative; padding-top:43px;}
+
+
+  #slidewrap > .slide_box {width:1623px; height:591px; margin-left:280px; position:absolute; z-index:50;}
+  .slide_box > .slide {width:100%;}
+  .slide_box > .slide > li {position:absolute;}
+  .slide_box > .slide > li:not(:first-child) {display:none;}
+
+  /*slide_mini*/
+  #slidewrap > .slide_mini {width:273px; height:330px; background-color:#fff; position:absolute; z-index:150; border-radius: 20px 0 20px 20px; overflow:hidden; margin-left:1280px;}
+  #slidewrap > .slide_mini > img {width:100%;}
+  #slidewrap > .slide_mini > .smini_c {width:250px; height:80px; margin:20px; display:flex; flex-direction:column; justify-content:space-between;}
+  #slidewrap > .slide_mini > .smini_c > h3 {color:#474c98; font-size:13px; font-family: 'Noto Sans KR', sans-serif; font-weight:500;}
+  #slidewrap > .slide_mini > .smini_c > h2 {color:#000; font-size:15px; font-family: 'Noto Sans KR', sans-serif; font-weight:500; margin-top:-15px;}
+  #slidewrap > .slide_mini > .smini_c > h4 {color:#767676; font-size:13px; font-family: 'Noto Sans KR', sans-serif; font-weight:500;}
+
+  /*slider nav*/
+  #slidewrap > .slide_nav {width:1448px; height:70px; background:linear-gradient(to right,rgba(240,240,240,0.94), rgb(240,240,240)); position:absolute; z-index:100; bottom:0; margin-left:455px; border-top-left-radius:15px; display:flex; align-items:center;}
+  .slide_nav > .hotissue {width:886px; height:70px; display:flex; justify-content:space-around;}
+  .slide_nav > .hotissue > li {margin-top:25px;}
+  .slide_nav > .hotissue > li > a {color:#767676; font-family: 'Noto Sans KR', sans-serif; font-weight:500;}
+
+  .slide_nav > p {color:#cfcfcf; font-size:13px;}
+
+  .slide_nav > .slide_btn {width:220px; height:70px; display:flex; justify-content:space-evenly; align-items:center;}
+  .slide_nav > .slide_btn > .prev {border:none; background-color:none;}
+  .slide_nav > .slide_btn > .prev > img {width:30px; height:30px; transform:rotate(180deg);}
+  .slide_nav > .slide_btn > .next {border:none; background-color:none;}
+  .slide_nav > .slide_btn > .next > img {width:30px; height:30px;}
+  .slide_nav > .slide_btn > .menu {border:none; background-color:none;}
+  .slide_nav > .slide_btn > .menu > img {width:50px; height:50px;}
+
+  /*section*/
+  section {width:100%; height:2500px;}
+  .icon_box {width:1200px; height:100px; margin:70px auto; display:flex; justify-content:space-between; text-align:center;}
+  .icon_box > .icb {width:90px; height:100px;}
+  .icon_box > .icb > h2 {font-size:14px; margin-top:8px; font-family:'Noto Sans KR', sans-serif; font-weight:300; width:100px;}
+
+  /*오늘의 선택*/
+  #today_choice {width:1200px; height:420px; margin:0 auto; display:flex; flex-direction:column; align-items:center;}
+  #today_choice > .tc_title {width:1200px; height:70px; display:flex; justify-content:space-between;}
+  #today_choice > .tc_title > h1 {font-size:30px; font-family:'Noto Sans KR', sans-serif; font-weight:700;}
+  #today_choice > .tc_title > .tc_title_nav {width:525px; height:20px; background-color: white; margin:10px 400px 0 0; display:flex; justify-content:space-between;}
+  #today_choice > .tc_title > .tc_title_nav > li > a {font-size:16px; color: #767676; font-family:'Noto Sans KR', sans-serif; font-weight:400;}
+  #today_choice > .tc_title > h2 {font-size:15px; font-family:'Noto Sans KR', sans-serif; font-weight:500; margin-top:10px;}
+  #today_choice > .tc_title > h2::after {content:" + "; font-size:17px; font-family:'Noto Sans KR', sans-serif; font-weight:700;}
+
+  #today_choice > .tc_content {width:1330px; height:350px; bottom:0; display:flex; justify-content:space-between; align-items:center;}
+  .tc_content > .tc_content_1 {width:660px; height:350px; background-color: turquoise; float:left; margin-left:-15px;}
+  .tc_content > .tc_content_2 {width:500px; height:350px; background-color: turquoise; float:right; margin-right:-15px;}
+
+  .tc_content > .tc_content_btn {width:1350px; height:44px; background-color: yellowgreen; margin:0 0 0 -80px;}
+  .tc_content > .prev {width:44px; height:44px; border-radius:100%; border: 1px solid #ccc; background-color: #fff; float:left;}
+  .tc_content > .prev > a > img {width:44px; height:44px; transform:rotate(180deg);}
+  .tc_content > .next {width:44px; height:44px; border-radius:100%; border: 1px solid #ccc; background-color: #fff; float:right;}
+  .tc_content > .next > a > img {width:44px; height:44px;}
+
+  .view {width:1200px; height:180px; margin:120px auto; display:flex; justify-content:space-between;}
+  .view > a > img {width:595px; height:180px; border-radius:10px;}
+
+
+  /*급상승 도서*/
+  #up {width:1200px; height:610px; margin:20px auto;}
+  #up > h1 {font-size:30px; font-family:'Noto Sans KR', sans-serif; font-weight:700;}
+  #up > .up_sl {width:1330px; height:530px; margin:40px 0 0 -65px; display:flex; justify-content:space-between; align-items:center;}
+  .up_sl_box {width:1200px; height:530px; background-color: violet;}
+  .up_sl > .prev {width:44px; height:44px; border-radius:100%; border: 1px solid #ccc; background-color: #fff; float:left;}
+  .up_sl > .prev > a > img {width:44px; height:44px; transform:rotate(180deg);}
+  .up_sl > .next {width:44px; height:44px; border-radius:100%; border: 1px solid #ccc; background-color: #fff; float:right;}
+  .up_sl > .next > a > img {width:44px; height:44px;}
+
+
+/*Picks*/
+#picks {width:100%; height:552px; background-color:#F6FAF2; display:flex; align-items:center;}
+.picks_b {width:1200px; height:388px; background-color: rgb(217, 255, 180); margin:0 auto;}
+.picks_t {width:1200px; height:75px; background-color:yellowgreen; display:flex; justify-content:space-between;}
+.picks_t > h2 {font-size:15px; font-family:'Noto Sans KR', sans-serif; font-weight:500; margin-top:15px;}
+.picks_t > h2::after {content:" + "; font-size:17px; font-family:'Noto Sans KR', sans-serif; font-weight:700;}
+
+.picks_b {width:1200px; height:313px; background-color: violet;}
